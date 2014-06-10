@@ -1,4 +1,4 @@
-### Assignment 3###
+## Assignment 3##
 
 I have taken downloaded the zip file to current folder using the below command
 
@@ -16,7 +16,7 @@ ogr2ogr -f "MySQL" MySQL:"kbadana,host=localhost,user=kbadana,password=Changeme_
 
 This command imported the table into the database
 
-##Table Structure##
+###Table Structure###
 
 ``` SQL
 
