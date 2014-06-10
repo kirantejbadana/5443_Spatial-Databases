@@ -33,9 +33,15 @@ http://cs2.mwsu.edu/~kbadana/DBTest/DBTest.php
 ###Output Displayed###
 
 Mercury 0 Rocy 0.24
+
 Venus 0 Rocy 0.62
+
 Earth 1 Rocy 1.00
+
 Mars 2 Rocy 1.88
+
 Jupiter 16 Gas 11.86
+
 Saturn 18 Gas 29.46
+
 Pluto 1 Rocy 247.70
