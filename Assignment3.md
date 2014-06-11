@@ -3,7 +3,7 @@
 I have taken downloaded the zip file to current folder using the below command
 
 ```
-wget http://thematicmapping.org/downloads/world_borders.php
+wget http://thematicmapping.org/downloads/TM_WORLD_BORDERS-0.3.zip
 ```
 Unzipped the file using the below command
 ```
