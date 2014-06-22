@@ -24,8 +24,29 @@ The National Marine Electronics Association (NMEA) has developed a specification
 ####CSV File Format:####
 A comma-separated values (CSV) (also sometimes called character-separated values, because the separator character does not have to be a comma) file stores tabular data (numbers and text) in plain-text form. Plain text means that the file is a sequence of characters, with no data that has to be interpreted instead, as binary numbers. A CSV file consists of any number of records, separated by line breaks of some kind; each record consists of fields, separated by some other character or string, most commonly a literal comma or tab. Usually, all records have an identical sequence of fields.
 
-####QGIS:#####
+####WKT File Format:#####
+Well-known text (WKT) is a text markup language for representing vector geometry objects on a map, spatial reference systems of spatial objects and transformations between spatial reference systems. A binary equivalent, known as well-known binary (WKB) is used to transfer and store the same information on databases, such as PostGIS, Microsoft SQL Server and DB2. The formats were originally defined by the Open Geospatial Consortium (OGC) and described in their Simple Feature Access and Coordinate Transformation Service specifications.
+
+###Software List:###
+
+####ArcGis Software:####
+ArcGis Software is used to create, share, and manage geographic data, maps, and analytical models using desktop and server applications. Deploy GIS across your organization and on the web.
+
+##ArcGis Software Modules:##
+GIS Professionals: GIS Professionals can create and manage data, maps and analytical models. They can then extend the reach of their work by sharing what they create across their organization.
+
+Location Analytics: Location Analytics offers a way to add a geographic dimension to your business analytics systems. Make informed decisions by visualizing critical information on a map.
+
+Developers: Developers can add mapping to web, mobile, and desktop applications using a choice of languages.
+
+
+####QGIS Software:#####
 QGIS is open source software package and QGIS offers many common GIS functionalities provided by core features and plugins. A short summary of six general categories of features and plugins is presented below, followed by first insights into the integrated Python console.
 
-####GPSBABEL:####
+####GPSBABEL Software:####
 GPSBabel is a cross-platform, free software to transfer routes, tracks, and waypoint data to and from consumer GPS unit, and to convert between over a hundred types of GPS data formats.[1] It has a command-line interface and a graphical interface for windows, OS X, and Linux users.
+
+####GDAL Software:#####
+GDAL(Geospatial Data Abstraction Library) is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source license by the Open Source Geospatial Foundation. As a library, it presents a single raster abstract data model and vector abstract data model to the calling application for all supported formats. It also comes with a variety of useful command line utilities for data translation and processing.
+
+
