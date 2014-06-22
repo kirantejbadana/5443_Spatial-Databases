@@ -71,3 +71,22 @@ In the general case it allows to specify a list of arbitrary polygons (convex or
 
 ####Multi polygon:####
 A multipolygon relation can have any number of ways in the role outer (the outline) and any number of ways in the role inner (the holes), and these must somehow form valid rings to build a multipolygon.
+
+####Touches####
+- If the neighbor polygon is an overlapping neighbor and the Include area overlaps check box is checked
+  - Add the AREA field to the output table.
+  - Calculate the area of the overlap.
+  - Record the calculated area for use in the output table AREA field.
+  - Record 0 for use in the output table LENGTH field.
+  - Record 0 for use in the output table NODE_COUNT field.
+  - Overlapping neighbor analysis is complete. Analyze the next neighbor polygon.
+- If the neighbor polygon is an edge neighbor
+  - Calculate the length of the coincident boundary.
+  - Record the calculated length for use in the LENGTH field.
+  - Record 0 for use in the NODE_COUNT field.
+  - Edge neighbor analysis is complete. Analyze the next neighbor polygon.
+- If the neighbor polygon is a node neighbor
+  - Find the number of times the neighbor polygon crosses and touches the source polygon at a point.
+  - Record this count value for use in the NODE_COUNT field.
+  - Record 0 for use in the LENGTH field.
+  - Node neighbor analysis is complete. Analyze the next neighbor polygon.
