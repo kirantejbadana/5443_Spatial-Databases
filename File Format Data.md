@@ -27,7 +27,7 @@ A comma-separated values (CSV) (also sometimes called character-separated values
 ####WKT File Format:#####
 Well-known text (WKT) is a text markup language for representing vector geometry objects on a map, spatial reference systems of spatial objects and transformations between spatial reference systems. A binary equivalent, known as well-known binary (WKB) is used to transfer and store the same information on databases, such as PostGIS, Microsoft SQL Server and DB2. The formats were originally defined by the Open Geospatial Consortium (OGC) and described in their Simple Feature Access and Coordinate Transformation Service specifications.
 
-###Software List:###
+####Software List:####
 
 ####ArcGis Software:####
 ArcGis Software is used to create, share, and manage geographic data, maps, and analytical models using desktop and server applications. Deploy GIS across your organization and on the web.
@@ -49,4 +49,25 @@ GPSBabel is a cross-platform, free software to transfer routes, tracks, and wayp
 ####GDAL Software:#####
 GDAL(Geospatial Data Abstraction Library) is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source license by the Open Source Geospatial Foundation. As a library, it presents a single raster abstract data model and vector abstract data model to the calling application for all supported formats. It also comes with a variety of useful command line utilities for data translation and processing.
 
+### Definitions: ###
 
+####Point:####
+A point is an exact position or location on a plane surface. It is important to understand that a point is not a thing, but a place. Here we represent the point using latitude and longitude and time zone. 
+
+####Curve:####
+A curve (also called a curved line in older texts) is, generally speaking, an object similar to a line but which is not required to be straight. This entails that a line is a special case of curve, namely a curve with null curvature.
+
+#####LineString:####
+A LineString is a one-dimensional object representing a sequence of points and the line segments connecting them.
+
+####Multi-Curve:####
+A Multi-Curve is a 1-dimensional Geometry Collection whose elements are Curves. 
+
+####MultiLineStrings:####
+A string literal is the representation of a string value within the source code of a computer program. Most often in modern languages this is a quoted sequence of characters (formally "bracketed delimiters"), as in x = "foo", where "foo" is a string literal with value foo – the quotes are not part of the value, and one must use escape characters to allow the delimiters themselves to be embedded in the string.
+
+####Surface Polygon:####
+In the general case it allows to specify a list of arbitrary polygons (convex or concave) with optional holes using any number of vertices and edges. The polygons may be connected by shared vertices to form a mesh. Materials can be assigned to the whole mesh or per polygon. It is possible to attach any kind of extra data on a per vertex basis, like texture coordinates or user values. The source description of polygon surfaces is subject to tessellation and displacement for rendering.
+
+####Multi polygon:####
+A multipolygon relation can have any number of ways in the role outer (the outline) and any number of ways in the role inner (the holes), and these must somehow form valid rings to build a multipolygon.
