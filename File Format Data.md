@@ -90,3 +90,21 @@ A multipolygon relation can have any number of ways in the role outer (the outli
   - Record this count value for use in the NODE_COUNT field.
   - Record 0 for use in the LENGTH field.
   - Node neighbor analysis is complete. Analyze the next neighbor polygon.
+
+####Crosses####
+- Using polygon 1 as the source polygon for an example, three neighbor polygons are found, and the following information is reported in the output table below:
+  - Polygon 2 overlaps polygon 1; the area of overlap, 1600, is written in the AREA field. The analysis of edge and node neighbors is skipped even though polygon 2 has a coincident edge with polygon 1 and crosses it at a point. Therefore, the fields LENGTH and NODE_COUNT get a value of 0.
+  - Polygon 4 has a coincident edge with polygon 1; the coincident length of the edge, 100, is written in the LENGTH field.
+  - Polygon 5 has a coincident edge with polygon 1; the length of the coincident edge, 20, is written in the LENGTH field. The node neighbor analysis is skipped even though it crosses polygon 1 at a point. The field NODE_COUNT gets a value of 0.
+
+####Within#####
+Among the following four polygons, overlapping, edge, or node neighbors occur only once between any two polygons. The tool only looks for edge and node neighbors (in that order) and the output does not contain the field AREA. Using polygon 1 as the source polygon for an example, three neighbor polygons are found, and the following information is reported in the output table below:
+- Each of polygons 2 and 5 has a coincident edge with polygon 1; the length of the edge, 20, is written in the LENGTH field. The node neighbor analysis is skipped even though polygon 2 crosses polygon 1 at a point. The field NODE_COUNT gets a value of 0.
+- Polygon 4 has a coincident edge with polygon 1; the length of the coincident edge, 100, is written in the LENGTH field.
+
+####Overlaps#####
+- A polygon covering the hole of another polygon
+  - In this case, polygon 2 has a hole which is covered by polygon 1. Notice the two polygons do not overlap, so the analysis for overlapping neighbors is unnecessary. When polygon 1 is the source polygon and polygon 2 has a coincident edge of 200 with polygon 1, this value is written to the LENGTH field. The NODE_COUNT field value is 0. Similarly, when polygon 2 is the source polygon, polygon 1 has a coincident edge of 200 with polygon 2, which results in the same values in the LENGTH field for each record.
+
+- A polygon completely overlapping another polygon
+  - In this case, polygons 1 and 2 overlap each other. You need to check the Include area overlap check box in order for this neighboring relationship to be found in the analysis. For both polygon 1, being the source, and polygon 2, being the neighbor, and vice versa, the overlapping area of 2500 is reported in the output table below.
