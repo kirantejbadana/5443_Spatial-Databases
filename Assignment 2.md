@@ -1,4 +1,4 @@
-##Assignment 2##
+##Grade
 
 |    |Possible|Points|Category     | Objective                                          | 
 |:--:|:------:|:----:|:-----------:|----------------------------------------------------|
@@ -16,9 +16,11 @@
 ![2] = Incorrect <br>
 ![3] = Partially Correct <br>
 
-[1]: http://localhost:8888/5443-Spatial-Database/media/correct.png
-[2]: http://localhost:8888/5443-Spatial-Database/media/incorrect.png
-[3]: http://localhost:8888/5443-Spatial-Database/media/partial.png
+[1]: https://raw.githubusercontent.com/rugbyprof/5443-Spatial-Database/master/media/correct.png
+[2]: https://raw.githubusercontent.com/rugbyprof/5443-Spatial-Database/master/media/incorrect.png
+[3]: https://raw.githubusercontent.com/rugbyprof/5443-Spatial-Database/master/media/partial.png
+
+##Assignment 2##
 
 I have written below code to test the database connectivity
 
