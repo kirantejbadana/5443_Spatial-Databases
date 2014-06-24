@@ -1,5 +1,25 @@
 ##Assignment 2##
 
+|    |Possible|Points|Category     | Objective                                          | 
+|:--:|:------:|:----:|:-----------:|----------------------------------------------------|
+|![2]|    10  |   0   | OGR Command | Ogr command was present.                           |
+|![2]|    40  |   0   | OGR Command | Ogr command was syntactically correct.             |
+|    |        |      |             |                                                    |
+|![2]|    10  |   0   | Table Structure | Table structure was present.                   |
+|![2]|    40  |   0   | Table Structure | Table structure was correct.                   |
+|    | Total  |      |             |                                                    |
+|    |    100 |   0   | Table Structure | Table structure was present, and correct.      |
+
+
+
+![1] = Correct <br>
+![2] = Incorrect <br>
+![3] = Partially Correct <br>
+
+[1]: http://localhost:8888/5443-Spatial-Database/media/correct.png
+[2]: http://localhost:8888/5443-Spatial-Database/media/incorrect.png
+[3]: http://localhost:8888/5443-Spatial-Database/media/partial.png
+
 I have written below code to test the database connectivity
 
 ``` php
