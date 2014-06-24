@@ -8,7 +8,7 @@
 |![2]|    10  |   0   | Table Structure | Table structure was present.                   |
 |![2]|    40  |   0   | Table Structure | Table structure was correct.                   |
 |    | Total  |      |             |                                                    |
-|    |    100 |   0   | Table Structure | Table structure was present, and correct.      |
+|    |    100 |   0   |  |     |
 
 
 
