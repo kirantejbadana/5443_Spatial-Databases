@@ -20,6 +20,7 @@
 [2]: https://raw.githubusercontent.com/rugbyprof/5443-Spatial-Database/master/media/incorrect.png
 [3]: https://raw.githubusercontent.com/rugbyprof/5443-Spatial-Database/master/media/partial.png
 
+Tej, you didn't follow instructions. I didn't ask for any of the items you placed in your assignment!
 ##Assignment 2##
 
 I have written below code to test the database connectivity
