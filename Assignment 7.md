@@ -4,7 +4,7 @@ I have used within function to check out if the latitude and longitude in the vo
 in shape of state_borders table. I have used Right outer join for displaying the data 
 
 ```SQL
-SELECT state,sb.shape as Location,Vol.shape FROM `state_borders` as sb right outer join `volcanoes` as Vol ON contains(sb.shape,Vol.shape) where sb.state='California'
+SELECT state,sb.shape AS Location,Vol.shape FROM `state_borders` AS sb RIGHT OUTER JOIN `volcanoes` AS Vol ON CONTAINS(sb.shape,Vol.shape) WHERE sb.state='California'
 ```
 
 
@@ -14,7 +14,7 @@ Total Number of output rows displayed: 20
 
 
 ```SQL
-SELECT state,sb.shape as Location,Vol.shape FROM `state_borders` as sb right outer join `earth_quakes` as Vol ON contains(sb.shape,Vol.shape) where sb.state='California'
+SELECT state,sb.shape AS Location,Vol.shape FROM `state_borders` AS sb RIGHT OUTER JOIN `earth_quakes` AS Vol ON CONTAINS(sb.shape,Vol.shape) WHERE sb.state='California'
 ```
 
 ouput:
